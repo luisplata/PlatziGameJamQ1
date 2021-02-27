@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cinemachine;
+using UnityEngine;
 
 [RequireComponent(typeof(MatrixBlender))]
 public class PerspectiveSwitcher : MonoBehaviour
@@ -14,6 +15,7 @@ public class PerspectiveSwitcher : MonoBehaviour
     public bool orthoOn = true;
     public Camera camera;
     public PlayerController playerController;
+    public CinemachineVirtualCamera virtualCamera;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class PerspectiveSwitcher : MonoBehaviour
         blender = (MatrixBlender)GetComponent(typeof(MatrixBlender));
         blender.Installer(camera, playerController);
         playerController.ShowContentByOrthoOn(orthoOn);
+        SwitcherPrespective(GetComponent<Animator>());
     }
     public void SwitcherPrespective(Animator anim)
     {
@@ -32,20 +35,20 @@ public class PerspectiveSwitcher : MonoBehaviour
         if (orthoOn)
         {
             anim.SetTrigger("presp");
-            Physics.gravity = new Vector3(0, -1.0F, 0);
             blender.BlendToMatrix(ortho, 1f, orthoOn);
+            virtualCamera.Follow = playerController.Rendering2D.transform;
         }
         else
         {
             anim.SetTrigger("orto");
-            Physics.gravity = new Vector3(0, 0, -1.0F);
             blender.BlendToMatrix(perspective, 1f, orthoOn);
+            virtualCamera.Follow = playerController.Rendering3D.transform;
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             SwitcherPrespective(GetComponent<Animator>());
         }
