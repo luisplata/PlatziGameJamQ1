@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GamePery.unity
+    guid: 9d3ad53d7150e6446b2bf3b539ab0cad
   m_configObjects: {}
