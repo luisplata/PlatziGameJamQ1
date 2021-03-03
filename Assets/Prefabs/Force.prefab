@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5906561802252159899}
   - component: {fileID: 5906561802252159896}
   - component: {fileID: 967975575}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Force
   m_TagString: Platforms
   m_Icon: {fileID: 0}

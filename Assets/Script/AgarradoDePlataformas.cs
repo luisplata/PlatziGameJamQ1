@@ -21,6 +21,11 @@ public class AgarradoDePlataformas : MonoBehaviour
         target.transform.SetParent(transform);
     }
 
+    internal void Accion()
+    {
+        target.GetComponent<BasicPlatform>().Accion();
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Platforms"))

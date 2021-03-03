@@ -12,7 +12,10 @@ public class LogicaDeAgarradoDePlataformas : MonoBehaviour
     {
         if (estaAgarrando)
         {
-
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                agarrado.Accion();
+            }
         }
         if (agarrado.PuedeAgarrarPlataforma)
         {
