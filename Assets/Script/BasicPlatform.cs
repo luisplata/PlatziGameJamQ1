@@ -8,7 +8,10 @@ public abstract class BasicPlatform : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        PlayerCollision(collision);
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            PlayerCollision(collision);
+        }
     }
 
     protected abstract void PlayerCollision(Collision collision);

@@ -6,6 +6,7 @@ public class Controller3DPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float forceExternal;
+    public float forceRotation;
     void Start()
     {
         
@@ -16,14 +17,18 @@ public class Controller3DPlayer : MonoBehaviour
     {
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
-        MovePlayer(horizontal, vertical);
+        MovePlayer(vertical, horizontal);
     }
 
     private void MovePlayer(float X, float Y)
     {
-        
-        Vector3 force = new Vector3(X, 0, Y) * forceExternal;
-        Debug.Log($"velocity {force}");
+
+        Vector3 force = transform.forward * X * forceExternal;
         GetComponent<Rigidbody>().velocity =force;
+        //agregamos rotacion
+        if(Y != 0)
+        {
+            transform.Rotate(0, Y * forceRotation, 0);
+        }
     }
 }

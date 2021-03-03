@@ -2,10 +2,10 @@
 
 public class ResetGameObject : MonoBehaviour
 {
-    public float X, Y, Z;
+    public GameObject pointReset;
 
     public void ResetGame()
     {
-        transform.localPosition = new Vector3(X, Y, Z);
+        transform.localPosition = pointReset.transform.localPosition;
     }
 }
