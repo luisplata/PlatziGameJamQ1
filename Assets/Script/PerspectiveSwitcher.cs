@@ -37,12 +37,14 @@ public class PerspectiveSwitcher : MonoBehaviour
             anim.SetTrigger("presp");
             blender.BlendToMatrix(ortho, 1f, orthoOn);
             virtualCamera.Follow = playerController.Rendering2D.transform;
+            Physics.gravity = new Vector3(0f, 0f, -9.81f);
         }
         else
         {
             anim.SetTrigger("orto");
             blender.BlendToMatrix(perspective, 1f, orthoOn);
             virtualCamera.Follow = playerController.Rendering3D.transform;
+            Physics.gravity = new Vector3(0f, 0f, -9.81f);
         }
     }
 

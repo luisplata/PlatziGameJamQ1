@@ -6,6 +6,7 @@ public class ResetGameObject : MonoBehaviour
 
     public void ResetGame()
     {
+        GetComponent<Rigidbody>().useGravity = false;
         transform.localPosition = pointReset.transform.localPosition;
     }
 }
