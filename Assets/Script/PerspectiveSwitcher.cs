@@ -19,6 +19,8 @@ public class PerspectiveSwitcher : MonoBehaviour
     public ControlesDeUI ui;
     public GameObject ui3D;
 
+    public PerspectiveActivator perspectiveActivator; 
+
     void Start()
     {
         aspect = (float)Screen.width / (float)Screen.height;
@@ -44,6 +46,7 @@ public class PerspectiveSwitcher : MonoBehaviour
             Physics.gravity = ConstantesDeProyecto.gravedad;
             ui.ActivarUI();
             ui3D.SetActive(false);
+            perspectiveActivator.ActivarOrtho();
         }
         else
         {
@@ -53,6 +56,7 @@ public class PerspectiveSwitcher : MonoBehaviour
             Physics.gravity = ConstantesDeProyecto.gravedad * 0;
             ui.DesactivarUI();
             ui3D.SetActive(true);
+            perspectiveActivator.DesactivarOrtho();
         }
     }
 

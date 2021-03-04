@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platforms
   - Player2D
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Player2D
   - Player3D
   - Platforms
-  - 
+  - PostProcessing
   - 
   - 
   - 
