@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5906561802252159898}
   - component: {fileID: 5906561802252159899}
   - component: {fileID: 5906561802252159896}
-  - component: {fileID: 1741393157}
+  - component: {fileID: -7852165289784438833}
   m_Layer: 10
-  m_Name: DuplicarTamanio
+  m_Name: Goal
   m_TagString: Platforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5906561802252159897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.277, y: 0.64, z: 0}
-  m_LocalScale: {x: 5.952695, y: 1, z: 1}
+  m_LocalScale: {x: 3.5534234, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d9226092b4b7f1146b69aada2536f56b, type: 2}
+  - {fileID: 2100000, guid: e3258085e8b5a764e905959819736985, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,12 +89,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5906561802252159897}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1741393157
+--- !u!114 &-7852165289784438833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5906561802252159897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6107e056ebb85db43817e6815ad14111, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e22b0e310989f34a9fb94d5faf9ab8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paraHacerGrande: 1
+  ganaste: {fileID: 0}

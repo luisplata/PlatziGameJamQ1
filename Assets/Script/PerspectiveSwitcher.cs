@@ -16,6 +16,8 @@ public class PerspectiveSwitcher : MonoBehaviour
     public Camera camera;
     public PlayerController playerController;
     public CinemachineVirtualCamera virtualCamera;
+    public ControlesDeUI ui;
+    public GameObject ui3D;
 
     void Start()
     {
@@ -28,6 +30,8 @@ public class PerspectiveSwitcher : MonoBehaviour
         blender.Installer(camera, playerController);
         playerController.ShowContentByOrthoOn(orthoOn);
         SwitcherPrespective(GetComponent<Animator>());
+        ui.DesactivarUI();
+        ui.HiddeMenu();
     }
     public void SwitcherPrespective(Animator anim)
     {
@@ -38,6 +42,8 @@ public class PerspectiveSwitcher : MonoBehaviour
             blender.BlendToMatrix(ortho, 1f, orthoOn);
             virtualCamera.Follow = playerController.Rendering2D.transform;
             Physics.gravity = ConstantesDeProyecto.gravedad;
+            ui.ActivarUI();
+            ui3D.SetActive(false);
         }
         else
         {
@@ -45,6 +51,8 @@ public class PerspectiveSwitcher : MonoBehaviour
             blender.BlendToMatrix(perspective, 1f, orthoOn);
             virtualCamera.Follow = playerController.Rendering3D.transform;
             Physics.gravity = ConstantesDeProyecto.gravedad * 0;
+            ui.DesactivarUI();
+            ui3D.SetActive(true);
         }
     }
 
@@ -54,5 +62,10 @@ public class PerspectiveSwitcher : MonoBehaviour
         {
             SwitcherPrespective(GetComponent<Animator>());
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ui.ShowMenu();
+        }
+
     }
 }

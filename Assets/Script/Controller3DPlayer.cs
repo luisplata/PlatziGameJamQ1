@@ -23,12 +23,12 @@ public class Controller3DPlayer : MonoBehaviour
     private void MovePlayer(float X, float Y)
     {
 
-        Vector3 force = transform.forward * X * forceExternal;
+        Vector3 force = transform.forward * X * forceExternal * Time.deltaTime;
         GetComponent<Rigidbody>().velocity =force;
         //agregamos rotacion
         if(Y != 0)
         {
-            transform.Rotate(0, Y * forceRotation, 0);
+            transform.Rotate(0, Y * forceRotation * Time.deltaTime, 0);
         }
     }
 }

@@ -21,7 +21,7 @@ public class AgarradoDePlataformas : MonoBehaviour
         target.transform.SetParent(transform);
     }
 
-    internal void Accion()
+    public void Accion()
     {
         target.GetComponent<BasicPlatform>().Accion();
     }
