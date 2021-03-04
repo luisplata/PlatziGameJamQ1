@@ -5,15 +5,28 @@ using UnityEngine;
 public class CambioDeGrabedad : BasicPlatform
 {
     public bool isDown;
+    public GameObject row;
+    private Vector3 direcction;
+    private void Start()
+    {
+        direcction = Vector3.right;
+    }
     public override void Accion()
     {
+        if (isDown) {
+            direcction = Vector3.right;
+        }
+        else
+        {
+            direcction = Vector3.right * -1;
+        }
         isDown = !isDown;
     }
 
     protected override void PlayerCollision(Collision collision)
     {
         if (isDown)
-        {
+        {   
             Physics.gravity = ConstantesDeProyecto.gravedad;
         }
         else
@@ -25,5 +38,10 @@ public class CambioDeGrabedad : BasicPlatform
     protected override void PlayerCollisionStay(Collision collision)
     {
         return;
+    }
+
+    private void Update()
+    {
+        row.transform.LookAt(transform.position + direcction);
     }
 }
