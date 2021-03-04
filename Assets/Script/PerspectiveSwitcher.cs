@@ -27,13 +27,12 @@ public class PerspectiveSwitcher : MonoBehaviour
         ortho = Matrix4x4.Ortho(-orthographicSize * aspect, orthographicSize * aspect, -orthographicSize, orthographicSize, near, far);
         perspective = Matrix4x4.Perspective(fov, aspect, near, far);
         camera.projectionMatrix = ortho;
-        orthoOn = true;
         blender = (MatrixBlender)GetComponent(typeof(MatrixBlender));
         blender.Installer(camera, playerController);
         playerController.ShowContentByOrthoOn(orthoOn);
-        SwitcherPrespective(GetComponent<Animator>());
         ui.DesactivarUI();
         ui.HiddeMenu();
+        SwitcherPrespective(GetComponent<Animator>());
     }
     public void SwitcherPrespective(Animator anim)
     {

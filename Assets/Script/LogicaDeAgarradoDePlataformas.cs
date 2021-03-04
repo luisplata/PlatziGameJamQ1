@@ -6,7 +6,7 @@ public class LogicaDeAgarradoDePlataformas : MonoBehaviour
 {
     public AgarradoDePlataformas agarrado;
     [SerializeField]
-    private bool estaAgarrando;
+    public bool estaAgarrando;
 
     // Update is called once per frame
     void Update()
