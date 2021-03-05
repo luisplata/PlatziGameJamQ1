@@ -703,6 +703,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1954028860068380600, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860275324126, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: m_text
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneExit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneReset
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1954028860773688155, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
       propertyPath: m_Pivot.x
@@ -812,6 +832,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneExit
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneReset
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14763f83c1a13744b639b7cd1220a54, type: 3}
@@ -1109,7 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1280,7 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1728,7 +1758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

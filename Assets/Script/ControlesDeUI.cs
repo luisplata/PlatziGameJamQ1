@@ -9,6 +9,7 @@ public class ControlesDeUI : MonoBehaviour
     public GameObject panelDeUI, menuUI;
     public Button buttonExit, buttonReset;
     public bool showMenu;
+    public int indexSceneReset, indexSceneExit;
 
     private void Start()
     {
@@ -18,12 +19,12 @@ public class ControlesDeUI : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(indexSceneExit);
     }
 
     public void Reseter()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(indexSceneReset);
     }
 
     public void ActivarUI()

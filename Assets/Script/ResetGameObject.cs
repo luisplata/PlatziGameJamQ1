@@ -7,7 +7,7 @@ public class ResetGameObject : MonoBehaviour
     public void ResetGame()
     {
         GetComponent<Rigidbody>().useGravity = false;
-        transform.localPosition = pointReset.transform.localPosition;
+        transform.localPosition = Vector3.zero; //pointReset.transform.localPosition;
         var escalar = 1;
         if(TryGetComponent<PhysicsRender2D>(out var d2d))
         {

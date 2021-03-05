@@ -13,6 +13,7 @@ public class CambioDeGrabedad : BasicPlatform
     }
     public override void Accion()
     {
+        isDown = !isDown;
         if (isDown) {
             direcction = Vector3.right;
         }
@@ -20,7 +21,6 @@ public class CambioDeGrabedad : BasicPlatform
         {
             direcction = Vector3.right * -1;
         }
-        isDown = !isDown;
     }
 
     protected override void PlayerCollision(Collision collision)

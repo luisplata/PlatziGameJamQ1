@@ -5,6 +5,11 @@ using UnityEngine;
 public class DuplicarAumentarTamanio : BasicPlatform
 {
     public bool paraHacerGrande;
+    public List<GameObject> big, small;
+    private void Start()
+    {
+        ChangeDirection();
+    }
     protected override void PlayerCollision(Collision collision)
     {
         return;
@@ -25,6 +30,29 @@ public class DuplicarAumentarTamanio : BasicPlatform
     public void ChangeDirection()
     {
         paraHacerGrande = !paraHacerGrande;
+        if (paraHacerGrande)
+        {
+            foreach(GameObject g in big)
+            {
+                g.SetActive(true);
+            }
+            foreach (GameObject g in small)
+            {
+                g.SetActive(false);
+            }
+            
+        }
+        else
+        {
+            foreach (GameObject g in big)
+            {
+                g.SetActive(false);
+            }
+            foreach (GameObject g in small)
+            {
+                g.SetActive(true);
+            }
+        }
     }
 
     protected override void PlayerCollisionStay(Collision collision)
