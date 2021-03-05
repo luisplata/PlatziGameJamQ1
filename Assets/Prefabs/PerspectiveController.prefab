@@ -47,3 +47,5 @@ MonoBehaviour:
   whiteLight: {fileID: 0}
   blueLight: {fileID: 0}
   particles: {fileID: 0}
+  character2D: {fileID: 0}
+  character3D: {fileID: 0}
