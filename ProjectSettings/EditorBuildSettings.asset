@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 19c500ce7eecf401883a29adc9a32902
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/level0.unity
+    path: Assets/Scenes/level0.unity
     guid: 916d20784ca98c844ae344db30fa3433
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/level1.unity
+    path: Assets/Scenes/level1.unity
     guid: e3bee48e4c3e07d43aa0ff0f2fa49b40
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/level2.unity
+    path: Assets/Scenes/level2.unity
     guid: 2206b8ceb289d1e4b90a4cd68fa5abdc
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/level3.unity
+    path: Assets/Scenes/level3.unity
     guid: 9290be2b833a01344817c6b6a551b22b
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/level4.unity
+    path: Assets/Scenes/level4.unity
     guid: 74bd02c40b8e6bc49959ef5906977c7a
   - enabled: 1
-    path: /Users/ivanbeltran/.Trash/PlatziGameJamQ1/Assets/Scenes/GamePery.unity
+    path: Assets/Scenes/GamePery.unity
     guid: 9d3ad53d7150e6446b2bf3b539ab0cad
   m_configObjects: {}

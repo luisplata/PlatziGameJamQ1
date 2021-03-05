@@ -155,6 +155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
+      propertyPath: indexSceneExit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
       propertyPath: indexSceneReset
       value: 1
       objectReference: {fileID: 0}

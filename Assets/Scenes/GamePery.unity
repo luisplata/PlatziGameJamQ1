@@ -669,12 +669,12 @@ PrefabInstance:
         type: 3}
       propertyPath: character2D
       value: 
-      objectReference: {fileID: 589132142}
+      objectReference: {fileID: 0}
     - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
         type: 3}
       propertyPath: character3D
       value: 
-      objectReference: {fileID: 1115141456}
+      objectReference: {fileID: 0}
     - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
         type: 3}
       propertyPath: perspectiveSwitcher
@@ -1072,6 +1072,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1954028860189205766, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
       propertyPath: indexSceneReset
@@ -1186,6 +1191,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneExit
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: indexSceneReset
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14763f83c1a13744b639b7cd1220a54, type: 3}
