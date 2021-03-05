@@ -25,7 +25,7 @@ public class Controller3DPlayer : MonoBehaviour
     {
         if (X == 0 && Y == 0)
         {
-            animator.Play("Grounded");
+            animator.Play("HumanoidIdle");
         } 
         else 
         {

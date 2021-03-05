@@ -8,6 +8,8 @@ public class PerspectiveActivator : MonoBehaviour
     public GameObject whiteLight;
     public GameObject blueLight;
     public GameObject particles;
+    public GameObject character2D;
+    public GameObject character3D;
 
    
     public void ActivarOrtho()
@@ -16,6 +18,7 @@ public class PerspectiveActivator : MonoBehaviour
         whiteLight.SetActive(true);
         blueLight.SetActive(false);
         particles.SetActive(false);
+        //character2D.SetActive(true);
     }
 
     public void DesactivarOrtho()
@@ -24,6 +27,7 @@ public class PerspectiveActivator : MonoBehaviour
         whiteLight.SetActive(false);
         blueLight.SetActive(true);
         particles.SetActive(true);
+        //character2D.SetActive(false);
     }
 
 }

@@ -645,6 +645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PerspectiveController
       objectReference: {fileID: 0}
+    - target: {fileID: 1557367660849440792, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
         type: 3}
       propertyPath: blueLight
@@ -660,6 +665,16 @@ PrefabInstance:
       propertyPath: whiteLight
       value: 
       objectReference: {fileID: 705507993}
+    - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
+        type: 3}
+      propertyPath: character2D
+      value: 
+      objectReference: {fileID: 589132142}
+    - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
+        type: 3}
+      propertyPath: character3D
+      value: 
+      objectReference: {fileID: 1115141456}
     - target: {fileID: 1557367660849440793, guid: ff7fbc157e25a4e33b1e1d7be5defcca,
         type: 3}
       propertyPath: perspectiveSwitcher
@@ -1250,6 +1265,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5916048679908844147, guid: 2092aa53633955a4aacdb1e79b35fede,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4c03fd2065124ca38c4c609c059786f, type: 2}
     - target: {fileID: 6154608276340734797, guid: 2092aa53633955a4aacdb1e79b35fede,
         type: 3}
       propertyPath: m_RootOrder
