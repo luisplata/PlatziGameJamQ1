@@ -17,8 +17,19 @@ public class PerspectiveActivator : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("preseptive");
+        //perspectiveSwitcher = GameObject.Find("PerspectiveController").GetComponent<PerspectiveSwitcher>();
+        perspectiveSwitcher = GameObject.FindObjectOfType<PerspectiveSwitcher>();
+        //audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        Debug.Log("audioManager");
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
+    }
+    void Awakes()
+    {
         perspectiveSwitcher = GameObject.Find("PerspectiveController").GetComponent<PerspectiveSwitcher>();
-        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        //audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        Debug.Log("audioManager");
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
     }
 
     public void ActivarOrtho()
@@ -27,6 +38,7 @@ public class PerspectiveActivator : MonoBehaviour
         whiteLight.SetActive(true);
         blueLight.SetActive(false);
         particles.SetActive(false);
+        Debug.Log("audioManager->use->isNotNull");
         audioManager.TransitionTo2DAudio();   
     }
 

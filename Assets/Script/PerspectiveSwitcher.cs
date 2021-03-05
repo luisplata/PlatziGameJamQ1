@@ -32,6 +32,7 @@ public class PerspectiveSwitcher : MonoBehaviour
         playerController.ShowContentByOrthoOn(orthoOn);
         ui.DesactivarUI();
         ui.HiddeMenu();
+        Debug.Log("audioManager->use");
         SwitcherPrespective(GetComponent<Animator>());
     }
     public void SwitcherPrespective(Animator anim)
