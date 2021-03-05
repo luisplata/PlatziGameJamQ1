@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964136, b: 0.5748149, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641335, b: 0.57481474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,7 +206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1Realidades!"
+  m_Text: "\xA1Realities!"
 --- !u!222 &15855899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &717366996
 RectTransform:
   m_ObjectHideFlags: 0
