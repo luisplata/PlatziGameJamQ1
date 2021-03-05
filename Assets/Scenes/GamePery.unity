@@ -1072,10 +1072,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1954028860033381637, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: m_text
+      value: 'You Won!
+
+        Thanks for playing
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1954028860189205766, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954028860275324126, guid: d14763f83c1a13744b639b7cd1220a54,
+        type: 3}
+      propertyPath: m_text
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 1954028860773688132, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
@@ -1195,7 +1209,7 @@ PrefabInstance:
     - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
       propertyPath: indexSceneExit
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1954028860962869221, guid: d14763f83c1a13744b639b7cd1220a54,
         type: 3}
