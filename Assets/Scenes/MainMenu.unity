@@ -206,7 +206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1Realidades!"
+  m_Text: Flipped Reality
 --- !u!222 &15855899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1319,7 +1319,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Creditos:\n\nProgramaci\xF3n:\nLuis Plata\n\nSFX and music\nIvan Beltran"
+  m_text: 'Credits
+
+
+    Programming
+
+    Luis Plata
+
+
+    Sound Design
+
+    Ivan
+    Beltran'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1346,8 +1357,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 114.88
-  m_fontSizeBase: 114.88
+  m_fontSize: 113.8
+  m_fontSizeBase: 113.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1681,6 +1692,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911709543431709901, guid: 818d01718d2b44b80ad961ea5d5c4cb3,
+        type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 05e61e77717e8466daaa4841919218f4,
+        type: 2}
+    - target: {fileID: 8911709543431709901, guid: 818d01718d2b44b80ad961ea5d5c4cb3,
+        type: 3}
+      propertyPath: levelMusic1
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b6c7ac57b3cc46e895648e3a308e102, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 818d01718d2b44b80ad961ea5d5c4cb3, type: 3}
 --- !u!1 &1380524366
