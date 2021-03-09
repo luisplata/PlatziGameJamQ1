@@ -6,27 +6,30 @@ public class CambioDeGrabedad : BasicPlatform
 {
     public bool isDown;
     public GameObject row;
-    private Vector3 direcction;
+    private Vector3 direction;
+
+
     private void Start()
     {
-        direcction = Vector3.right;
+        direction = Vector3.left;
+        
     }
     public override void Accion()
     {
         isDown = !isDown;
         if (isDown) {
-            direcction = Vector3.right;
+            direction = Vector3.left;
         }
         else
         {
-            direcction = Vector3.right * -1;
+            direction = Vector3.right;
         }
     }
 
     protected override void PlayerCollision(Collision collision)
     {
         if (isDown)
-        {   
+        {
             Physics.gravity = ConstantesDeProyecto.gravedad;
         }
         else
@@ -42,6 +45,9 @@ public class CambioDeGrabedad : BasicPlatform
 
     private void Update()
     {
-        row.transform.LookAt(transform.position + direcction);
+        //row.transform.LookAt(new Vector3(0,-90,0), Vector3.left);
+        row.transform.LookAt(new Vector3(0, -90, 0), direction);
     }
+
+
 }
